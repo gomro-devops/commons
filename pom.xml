@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>cn.gomro</groupId>
+    <artifactId>commons</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>commons</name>
+    <description>固买通用工具类</description>
+    <packaging>pom</packaging>
+
+    <url>https://github.com/gomro-devops/commons</url>
+    <properties>
+        <java.version>17</java.version>
+    </properties>
+
+    <!-- 许可证信息，这里是Apache 2.0的许可证，大家根据实际情况修改 -->
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version2.0</name>
+            <url>https://www.apache.org/licenses/</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <!--   开发人员信息    -->
+    <developers>
+        <developer>
+            <name>Adam</name>
+            <email>adam_yao@gomro.cn</email>
+        </developer>
+    </developers>
+
+    <!--   项目仓库信息    -->
+    <scm>
+        <connection>scm:git:https://github.com/gomro-devops/commons.git</connection>
+        <developerConnection>mailto:adam_yao@gomro.cn</developerConnection>
+        <url>https://github.com/gomro-devops/commons.git</url>
+        <tag>v${project.version}</tag>
+    </scm>
+
+    <!-- 中央仓库地址配置，不需要修改 -->
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+
+        <repository>
+            <id>ossrh</id>
+            <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
+
+    <modules>
+        <module>actuator-version</module>
+        <module>demo-test</module>
+    </modules>
+</project>
