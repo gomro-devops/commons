@@ -1,4 +1,4 @@
-package com.gomro.galaxy.core.commons.response;
+package cn.gomro.restful.api.response;
 
 import cn.gomro.restful.api.response.error.BaseException;
 import com.fasterxml.jackson.annotation.JsonIgnore;
