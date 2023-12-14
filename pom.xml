@@ -43,6 +43,7 @@
     <modules>
         <module>actuator-version</module>
         <module>restful-api</module>
+        <module>bus-api</module>
         <module>thin-log</module>
         <module>utils</module>
         <module>demo-test</module>
