@@ -24,15 +24,15 @@
         </license>
     </licenses>
 
-    <!--   开发人员信息    -->
+    <!--   开发人员信息   -->
     <developers>
         <developer>
-            <name>Adam</name>
+            <name>Adam Yao</name>
             <email>adam_yao@gomro.cn</email>
         </developer>
     </developers>
 
-    <!--   项目仓库信息    -->
+    <!--   项目仓库信息   -->
     <scm>
         <connection>scm:git:https://github.com/gomro-devops/commons.git</connection>
         <developerConnection>mailto:adam_yao@gomro.cn</developerConnection>
@@ -40,21 +40,11 @@
         <tag>v${project.version}</tag>
     </scm>
 
-    <!-- 中央仓库地址配置，不需要修改 -->
-    <distributionManagement>
-        <snapshotRepository>
-            <id>ossrh</id>
-            <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
-        </snapshotRepository>
-
-        <repository>
-            <id>ossrh</id>
-            <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-        </repository>
-    </distributionManagement>
-
     <modules>
         <module>actuator-version</module>
+        <module>restful-api</module>
+        <module>thin-log</module>
+        <module>utils</module>
         <module>demo-test</module>
     </modules>
 </project>
