@@ -78,6 +78,11 @@ public class RestResponse<T> implements Serializable {
         return success(msg, 0, null);
     }
 
+    public static <V> RestResponse<V> success() {
+
+        return success("成功", 0, null);
+    }
+
     public static <V> RestResponse<V> success(long code, String msg, long count, V data) {
 
         return new RestResponse<>(code, msg, count, data);

@@ -10,7 +10,7 @@
     </parent>
     <groupId>cn.gomro</groupId>
     <artifactId>restful-api</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.3</version>
     <name>restful-api</name>
     <description>restful-api</description>
     <properties>
