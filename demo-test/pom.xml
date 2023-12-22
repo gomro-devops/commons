@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.example</groupId>
     <artifactId>demo-test</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.2</version>
     <name>demo-test</name>
     <description>demo-test</description>
     <properties>
@@ -19,9 +19,9 @@
     <dependencies>
 
         <dependency>
-            <groupId>cn.gomro</groupId>
+            <groupId>cn.gomro.commons</groupId>
             <artifactId>actuator-version</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>0.0.2</version>
         </dependency>
 
         <dependency>

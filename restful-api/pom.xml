@@ -8,9 +8,9 @@
         <version>3.2.0</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>cn.gomro</groupId>
+    <groupId>cn.gomro.commons</groupId>
     <artifactId>restful-api</artifactId>
-    <version>0.0.3</version>
+    <version>0.0.4</version>
     <name>restful-api</name>
     <description>restful-api</description>
     <properties>
@@ -37,7 +37,7 @@
         </dependency>
 
         <dependency>
-            <groupId>cn.gomro</groupId>
+            <groupId>cn.gomro.commons</groupId>
             <artifactId>utils</artifactId>
             <version>0.0.1</version>
         </dependency>

@@ -8,9 +8,9 @@
         <version>3.2.0</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>cn.gomro</groupId>
+    <groupId>cn.gomro.commons</groupId>
     <artifactId>bus-api</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
     <name>bus-api</name>
     <description>bus-api</description>
     <properties>

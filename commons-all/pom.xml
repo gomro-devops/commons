@@ -9,39 +9,39 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>cn.gomro.commons</groupId>
-    <artifactId>utils</artifactId>
-    <version>0.0.2</version>
-    <name>utils</name>
-    <description>utils</description>
+    <artifactId>commons-all</artifactId>
+    <version>0.0.1</version>
+    <name>commons-all</name>
+    <description>commons-all 集成所有 commons 中的项目类</description>
     <properties>
         <java.version>17</java.version>
     </properties>
     <dependencies>
 
         <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <optional>true</optional>
+            <groupId>cn.gomro.commons</groupId>
+            <artifactId>utils</artifactId>
+            <version>0.0.2</version>
         </dependency>
-
         <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-annotations</artifactId>
+            <groupId>cn.gomro.commons</groupId>
+            <artifactId>thin-log</artifactId>
+            <version>0.0.2</version>
         </dependency>
-
         <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-lang3</artifactId>
+            <groupId>cn.gomro.commons</groupId>
+            <artifactId>restful-api</artifactId>
+            <version>0.0.3</version>
         </dependency>
-
         <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-core</artifactId>
+            <groupId>cn.gomro.commons</groupId>
+            <artifactId>bus-api</artifactId>
+            <version>0.0.2</version>
         </dependency>
-
         <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
+            <groupId>cn.gomro.commons</groupId>
+            <artifactId>actuator-version</artifactId>
+            <version>0.0.2</version>
         </dependency>
 
     </dependencies>

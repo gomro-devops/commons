@@ -8,9 +8,9 @@
         <version>3.2.0</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>cn.gomro</groupId>
+    <groupId>cn.gomro.commons</groupId>
     <artifactId>thin-log</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
     <name>thin-log</name>
     <description>thin-log</description>
     <properties>
@@ -46,9 +46,9 @@
         </dependency>
 
         <dependency>
-            <groupId>cn.gomro</groupId>
+            <groupId>cn.gomro.commons</groupId>
             <artifactId>utils</artifactId>
-            <version>0.0.1</version>
+            <version>0.0.2</version>
             <scope>compile</scope>
         </dependency>
 

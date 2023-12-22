@@ -3,9 +3,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>cn.gomro</groupId>
+    <groupId>cn.gomro.commons</groupId>
     <artifactId>commons</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
     <name>commons</name>
     <description>固买通用工具类</description>
     <packaging>pom</packaging>
@@ -41,6 +41,7 @@
     </scm>
 
     <modules>
+        <module>commons-all</module>
         <module>actuator-version</module>
         <module>restful-api</module>
         <module>bus-api</module>
