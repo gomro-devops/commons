@@ -1,6 +1,6 @@
-package cn.gomro.log;
+package cn.gomro.commons.log;
 
-import cn.gomro.utils.StringUtils;
+import cn.gomro.commons.utils.StringUtils;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.Arrays;

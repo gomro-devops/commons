@@ -1,4 +1,4 @@
-package cn.gomro.restful.api.query;
+package cn.gomro.commons.restful.api.query;
 
 import cn.gomro.utils.StringUtils;
 import io.swagger.v3.oas.annotations.media.Schema;

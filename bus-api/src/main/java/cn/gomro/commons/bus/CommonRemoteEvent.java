@@ -1,4 +1,4 @@
-package cn.gomro.bus;
+package cn.gomro.commons.bus;
 
 import lombok.*;
 import org.springframework.cloud.bus.event.RemoteApplicationEvent;

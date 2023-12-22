@@ -1,4 +1,4 @@
-package cn.gomro.actuator.version;
+package cn.gomro.commons.actuator.version;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;

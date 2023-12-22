@@ -1,4 +1,4 @@
-package cn.gomro.restful.api.response.error;
+package cn.gomro.commons.restful.api.response.error;
 
 import java.util.Arrays;
 

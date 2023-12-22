@@ -1,6 +1,6 @@
-package cn.gomro.restful.api.response;
+package cn.gomro.commons.restful.api.response;
 
-import cn.gomro.restful.api.response.error.BaseException;
+import cn.gomro.commons.restful.api.response.error.BaseException;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.AllArgsConstructor;
