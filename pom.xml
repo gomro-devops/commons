@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>cn.gomro.commons</groupId>
+    <artifactId>commons</artifactId>
+    <version>0.0.10</version>
+
+    <name>commons</name>
+    <description>固买通用类</description>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>commons-dependencies</module>
+        <module>commons-all</module>
+        <module>actuator-version</module>
+        <module>restful-api</module>
+        <module>bus-api</module>
+        <module>thin-log</module>
+        <module>utils</module>
+    </modules>
+
+</project>

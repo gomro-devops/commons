@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>cn.gomro.commons</groupId>
+        <artifactId>commons-dependencies</artifactId>
+        <version>0.0.10</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
+    <artifactId>commons-all</artifactId>
+    <version>0.0.10</version>
+    <name>Commons All</name>
+    <description>commons-all 集成所有 commons 中的项目类</description>
+    <properties>
+        <java.version>17</java.version>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+    <dependencies>
+
+        <dependency>
+            <groupId>cn.gomro.commons</groupId>
+            <artifactId>utils</artifactId>
+            <version>0.0.10</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.gomro.commons</groupId>
+            <artifactId>thin-log</artifactId>
+            <version>0.0.10</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.gomro.commons</groupId>
+            <artifactId>restful-api</artifactId>
+            <version>0.0.10</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.gomro.commons</groupId>
+            <artifactId>bus-api</artifactId>
+            <version>0.0.10</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.gomro.commons</groupId>
+            <artifactId>actuator-version</artifactId>
+            <version>0.0.10</version>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-gpg-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+</project>

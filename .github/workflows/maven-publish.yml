@@ -1,0 +1,33 @@
+# 相当于脚本用途的一个声明
+name: Maven Central Repo Deployment
+# 触发脚本的事件  这里为发布release之后触发
+on:
+  push:
+    branches:
+      - main
+      # 定义一个发行任务
+jobs:
+  release:
+    # 运行处理流程的 OS 环境
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out Git repository
+        uses: actions/checkout@v4.1.1
+
+      - name: Install Java and Maven
+        uses: actions/setup-java@v2
+        with:
+          java-version: 17
+
+      - name: Release Maven package
+        uses: samuelmeuli/action-maven-publish@v1.4.0
+        with:
+          # 部署哪个 写哪个项目
+          # actuator-version,bus-api,commons-all,restful-api,thin-log,utils
+          server_id: 'ossrh'
+          maven_goals_phases: 'clean'  #需要发布时使用 clean deploy
+          maven_args: '-pl not_set -DskipTests'
+          gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}    # GPG 导出的那段长长的密钥
+          gpg_passphrase: ${{ secrets.GPG_PASSPHRASE }}      # 自己设置的 GPG 密码 ok
+          nexus_username: ${{ secrets.NEXUS_USERNAME }}      # sonatype 用户名（不是邮箱）
+          nexus_password: ${{ secrets.NEXUS_PASSWORD }}      # sonatype 登录密码
