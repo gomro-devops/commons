@@ -7,7 +7,7 @@ git checkout -B main-bak origin/main
 echo "创建无历史分支..."
 git checkout --orphan latest_branch
 git add -A
-git commit -m "init"
+git commit -m "initial"
 echo "本地初始化为 main..."
 git branch -D main
 git branch -m main

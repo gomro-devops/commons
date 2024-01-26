@@ -12,12 +12,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out Git repository
-        uses: actions/checkout@v4.1.1
+        uses: actions/checkout@v4
 
       - name: Install Java and Maven
-        uses: actions/setup-java@v2
+        uses: actions/setup-java@v4
         with:
-          java-version: 17
+          distribution: 'oracle'
+          java-version: '17'
 
       - name: Release Maven package
         uses: samuelmeuli/action-maven-publish@v1.4.0
@@ -26,8 +27,8 @@ jobs:
           # actuator-version,bus-api,commons-all,restful-api,thin-log,utils
           server_id: 'ossrh'
           maven_goals_phases: 'clean'  #需要发布时使用 clean deploy
-          maven_args: '-pl not_set -DskipTests'
-          gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}    # GPG 导出的那段长长的密钥
-          gpg_passphrase: ${{ secrets.GPG_PASSPHRASE }}      # 自己设置的 GPG 密码 ok
-          nexus_username: ${{ secrets.NEXUS_USERNAME }}      # sonatype 用户名（不是邮箱）
+          maven_args: '-DskipTests'  # 发布时更新 -pl + 项目
+          gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}    # GPG 密钥
+          gpg_passphrase: ${{ secrets.GPG_PASSPHRASE }}      # 自己设置的 GPG 密码
+          nexus_username: ${{ secrets.NEXUS_USERNAME }}      # sonatype 用户名
           nexus_password: ${{ secrets.NEXUS_PASSWORD }}      # sonatype 登录密码
