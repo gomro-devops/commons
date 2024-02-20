@@ -24,7 +24,7 @@ jobs:
         uses: samuelmeuli/action-maven-publish@v1.4.0
         with:
           server_id: 'ossrh'
-          maven_goals_phases: 'clean'  #需要发布时使用 clean deploy
+          maven_goals_phases: 'clean deploy'  #需要发布时使用 clean deploy
           # 部署哪个 写哪个项目
           # actuator-version,bus-api,commons-all,restful-api,thin-log,utils
           maven_args: '-DskipTests -pl utils'  # 发布时更新 -pl + 项目
