@@ -19,6 +19,7 @@
         <module>bus-api</module>
         <module>thin-log</module>
         <module>utils</module>
+        <module>validation</module>
     </modules>
 
 </project>

@@ -42,7 +42,7 @@
         <dependency>
             <groupId>cn.gomro.commons</groupId>
             <artifactId>utils</artifactId>
-            <version>LATEST</version>
+            <version>0.0.10</version>
         </dependency>
 
         <dependency>
