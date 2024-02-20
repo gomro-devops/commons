@@ -5,13 +5,13 @@
     <parent>
         <groupId>cn.gomro.commons</groupId>
         <artifactId>commons-dependencies</artifactId>
-        <version>0.0.10</version>
+        <version>0.0.11</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <artifactId>actuator-version</artifactId>
-    <version>0.0.10</version>
+    <version>0.0.11</version>
     <name>Actuator Version Endpoints </name>
-    <description>暴露 /version 接口</description>
+    <description>暴露 /version /actuator/info 接口</description>
     <properties>
         <java.version>17</java.version>
         <maven.compiler.source>17</maven.compiler.source>

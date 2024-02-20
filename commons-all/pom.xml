@@ -5,12 +5,12 @@
     <parent>
         <groupId>cn.gomro.commons</groupId>
         <artifactId>commons-dependencies</artifactId>
-        <version>0.0.10</version>
+        <version>0.0.11</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
     <artifactId>commons-all</artifactId>
-    <version>0.0.10</version>
+    <version>0.0.11</version>
     <name>Commons All</name>
     <description>commons-all 集成所有 commons 中的项目类</description>
     <properties>
@@ -24,7 +24,7 @@
         <dependency>
             <groupId>cn.gomro.commons</groupId>
             <artifactId>utils</artifactId>
-            <version>0.0.10</version>
+            <version>0.0.11</version>
         </dependency>
         <dependency>
             <groupId>cn.gomro.commons</groupId>
@@ -44,7 +44,7 @@
         <dependency>
             <groupId>cn.gomro.commons</groupId>
             <artifactId>actuator-version</artifactId>
-            <version>0.0.10</version>
+            <version>0.0.11</version>
         </dependency>
 
     </dependencies>
