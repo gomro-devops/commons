@@ -10,7 +10,7 @@
     </parent>
 
     <artifactId>commons-all</artifactId>
-    <version>0.0.11</version>
+    <version>0.0.12</version>
     <name>Commons All</name>
     <description>commons-all 集成所有 commons 中的项目类</description>
     <properties>
@@ -45,6 +45,11 @@
             <groupId>cn.gomro.commons</groupId>
             <artifactId>actuator-version</artifactId>
             <version>0.0.11</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.gomro.commons</groupId>
+            <artifactId>validation</artifactId>
+            <version>0.0.1</version>
         </dependency>
 
     </dependencies>
