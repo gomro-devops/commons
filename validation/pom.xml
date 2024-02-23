@@ -4,7 +4,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>cn.gomro.commons</groupId>
+    <parent>
+        <groupId>cn.gomro.commons</groupId>
+        <artifactId>commons-dependencies</artifactId>
+        <version>0.0.12</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
     <artifactId>validation</artifactId>
     <version>0.0.1</version>
     <name>Generic Validation</name>
