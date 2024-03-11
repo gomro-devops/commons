@@ -1,32 +1,26 @@
 package cn.gomro.commons.restful.api.response.error;
 
-import java.util.Arrays;
+/**
+ * @author Adam 2024/3/11 8:31 说明: 统一业务异常码
+ * @since 2024/3/11 8:31
+ */
 
-public enum ErrorMessageCode {
+public interface ErrorMessageCode {
 
-    GeneralError(202, "错误，请根据提示操作"),
-    BadRequestError(400, "请求格式错误"),
-    DeprecatedInterface(404, "接口不存在或已过期"),
-    InternalError(500, "内部错误，需联系管理员"),
-    ;
+    /**
+     * 给每个  项目/service/method  编号
+     * 仅需要定义最后一层method内的业务异常；
+     * <p>
+     * 统一业务异常码不具有复用性；
+     * 统一系统异常码可复用；
+     */
 
-    public final int id;
-    public final String name;
+    public int getCode();
+    public String getMessage();
+    public String getReason();
+    public String getSolution();
+    public String getReference();
+    public String[] getErrors();
 
-    ErrorMessageCode(int id, String name) {
 
-        this.id = id;
-        this.name = name;
-    }
-
-    public static ErrorMessageCode get(int id) {
-
-        return Arrays.stream(ErrorMessageCode.values()).filter(v -> v.id == id).findFirst().orElse(null);
-    }
-
-    @Override
-    public String toString() {
-
-        return String.valueOf(id);
-    }
 }

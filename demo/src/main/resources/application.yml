@@ -1,0 +1,11 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  info:
+    defaults:
+      enabled: true
+spring:
+  application:
+    name: ae3zdfg4
