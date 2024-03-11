@@ -10,7 +10,7 @@
     </parent>
 
     <artifactId>restful-api</artifactId>
-    <version>0.0.11</version>
+    <version>0.0.12</version>
     <name>RESTful API Generic Interface</name>
     <description>RESTful API 通用接口请求及响应包装类 Request and Response Wrapper</description>
     <properties>

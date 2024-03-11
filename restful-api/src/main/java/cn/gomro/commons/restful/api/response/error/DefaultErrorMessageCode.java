@@ -17,23 +17,19 @@ public interface DefaultErrorMessageCode {
 
         @Override
         public String getReason() {
-            return null;
+            return "通过是出现了未定义的Exceptions";
         }
 
         @Override
         public String getSolution() {
-            return null;
+            return "联系管理员";
         }
 
         @Override
         public String getReference() {
-            return null;
+            return "";
         }
 
-        @Override
-        public String[] getErrors() {
-            return new String[0];
-        }
     };
     // 404
     ErrorMessageCode DeprecatedInterface = new ErrorMessageCode() {
@@ -50,23 +46,19 @@ public interface DefaultErrorMessageCode {
 
         @Override
         public String getReason() {
-            return null;
+            return "调用了已过期的接口";
         }
 
         @Override
         public String getSolution() {
-            return null;
+            return "请查阅最新文档";
         }
 
         @Override
         public String getReference() {
-            return null;
+            return "";
         }
 
-        @Override
-        public String[] getErrors() {
-            return new String[0];
-        }
     };
     // 400
     ErrorMessageCode BadRequestError = new ErrorMessageCode() {
@@ -83,23 +75,19 @@ public interface DefaultErrorMessageCode {
 
         @Override
         public String getReason() {
-            return null;
+            return "格式不符合预期";
         }
 
         @Override
         public String getSolution() {
-            return null;
+            return "修改请求参数";
         }
 
         @Override
         public String getReference() {
-            return null;
+            return "";
         }
 
-        @Override
-        public String[] getErrors() {
-            return new String[0];
-        }
     };
     // 202
     ErrorMessageCode GeneralError = new ErrorMessageCode() {
@@ -115,22 +103,18 @@ public interface DefaultErrorMessageCode {
 
         @Override
         public String getReason() {
-            return null;
+            return "请检查是否重复请求";
         }
 
         @Override
         public String getSolution() {
-            return null;
+            return "系统收到了请求，但无法正确处理";
         }
 
         @Override
         public String getReference() {
-            return null;
+            return "";
         }
 
-        @Override
-        public String[] getErrors() {
-            return null;
-        }
     };
 }

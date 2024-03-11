@@ -20,7 +20,5 @@ public interface ErrorMessageCode {
     public String getReason();
     public String getSolution();
     public String getReference();
-    public String[] getErrors();
-
 
 }

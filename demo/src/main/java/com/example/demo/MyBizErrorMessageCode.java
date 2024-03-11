@@ -31,9 +31,5 @@ public interface MyBizErrorMessageCode {
             return "http://a的链接";
         }
 
-        @Override
-        public String[] getErrors() {
-            return new String[0];
-        }
     };
 }

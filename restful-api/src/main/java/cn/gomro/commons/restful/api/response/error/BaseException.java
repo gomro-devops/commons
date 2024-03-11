@@ -14,7 +14,7 @@ public class BaseException extends RuntimeException {
 
     private ErrorMessageCode error;
 
-    public <T> BaseException(String message, ErrorMessageCode error) {
+    public BaseException(String message, ErrorMessageCode error) {
         super(message);
         this.error = error;
     }
