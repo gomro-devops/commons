@@ -6,6 +6,8 @@ on:
     branches:
       - main
       # 定义一个发行任务
+
+concurrency: '1'
 jobs:
   release:
     # 运行处理流程的 OS 环境
