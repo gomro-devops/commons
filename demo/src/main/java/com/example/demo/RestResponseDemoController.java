@@ -26,12 +26,16 @@ public class RestResponseDemoController {
     @GetMapping("sucessDemo1")
     public RestResponse<Foo> sucessDemo1() {
         return RestResponse.success("成功");
+        // 等价
+//        return RestResponse.success();
     }
 
     @Operation(summary = "业务描述2", operationId = "302")
     @GetMapping("sucessDemo2")
     public RestResponse<Foo> sucessDemo2() {
         return RestResponse.success("成功", new Foo("bar"));
+        // 等价
+//        return RestResponse.success(1,new Foo("bar"));
     }
 
     @Operation(summary = "业务描述3", operationId = "303")

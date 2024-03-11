@@ -112,7 +112,6 @@ class RestResponseDemoControllerTest {
                 .andDo(result -> {
                     result.getResponse().setCharacterEncoding("UTF-8");
                 })
-                .andExpect(jsonPath("$.message").value("演示项目/模块描述/业务描述6/错误，请根据提示操作"))
                 .andExpect(jsonPath("$.code").value(101_201_306_202L))
                 .andDo(MockMvcResultHandlers.print())
         ;

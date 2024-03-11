@@ -28,7 +28,7 @@ public interface MyBizErrorMessageCode {
 
         @Override
         public String getReference() {
-            return "http://a的链接";
+            return "/a/link";
         }
 
     };

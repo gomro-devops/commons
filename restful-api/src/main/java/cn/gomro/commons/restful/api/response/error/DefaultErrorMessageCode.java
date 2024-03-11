@@ -17,7 +17,7 @@ public interface DefaultErrorMessageCode {
 
         @Override
         public String getReason() {
-            return "通过是出现了未定义的Exceptions";
+            return "通常是出现了未定义的Exceptions";
         }
 
         @Override

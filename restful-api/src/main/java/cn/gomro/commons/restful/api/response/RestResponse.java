@@ -66,6 +66,11 @@ public class RestResponse<T> implements Serializable {
         return new RestResponse<V>(200, msg, count, data, null);
     }
 
+    public static <V> RestResponse<V> success(long count, V data) {
+
+        return new RestResponse<V>(200, "成功", count, data, null);
+    }
+
     /**
      * @author Adam 2024/3/11 8:57 说明: 成功 返回消息和数据
      */
@@ -79,7 +84,7 @@ public class RestResponse<T> implements Serializable {
      */
     public static <V> RestResponse<V> success(long count) {
 
-        return success("", count, null);
+        return success("成功", count, null);
     }
 
     /**
@@ -125,10 +130,10 @@ public class RestResponse<T> implements Serializable {
         String applicationName = System.getProperty("applicationName");
         String applicationCode = System.getProperty("applicationCode");
         if (ObjectUtils.isEmpty(applicationCode)) {
-            throw new RuntimeException("无法获取项目名, 请检查系统环境变量 applicationName");
+            throw new RuntimeException("无法获取项目名, 请检查系统属性 applicationName");
         }
         if (ObjectUtils.isEmpty(applicationCode)) {
-            throw new RuntimeException("无法获取项目编码, 请检查系统环境变量 applicationCode");
+            throw new RuntimeException("无法获取项目编码, 请检查系统属性 applicationCode");
         }
 
         //获取类编码
