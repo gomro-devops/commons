@@ -10,7 +10,7 @@
     </parent>
 
     <artifactId>commons-all</artifactId>
-    <version>0.0.13</version>
+    <version>0.0.14</version>
     <name>Commons All</name>
     <description>commons-all 集成所有 commons 中的项目类</description>
     <properties>
@@ -34,7 +34,7 @@
         <dependency>
             <groupId>cn.gomro.commons</groupId>
             <artifactId>restful-api</artifactId>
-            <version>0.0.14</version>
+            <version>0.0.15</version>
         </dependency>
         <dependency>
             <groupId>cn.gomro.commons</groupId>
