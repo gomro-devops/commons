@@ -25,7 +25,7 @@ import java.util.List;
 
 @Slf4j
 @ComponentScan(basePackageClasses = VersionController.class,
-        basePackages = "com.example.demo")
+        basePackages = {"com.example.demo","cn.gomro"})
 @SpringBootApplication
 public class DemoApplication {
 
@@ -33,7 +33,7 @@ public class DemoApplication {
     public static void main(String[] args) {
         System.setProperty("applicationName", "演示项目");
         System.setProperty("applicationCode", "101");
-        ConfigurableApplicationContext applicationContext = SpringApplication.run(DemoApplication.class, args);
+        SpringApplication.run(DemoApplication.class, args);
 
         // 使用 ClassScanner 扫描所有类
         ClassPath classPath = ClassPath.from(ClassLoader.getSystemClassLoader());
@@ -49,8 +49,8 @@ public class DemoApplication {
                 if (isSub || isSupper) {
                     Field[] fields = clazz.getDeclaredFields();
                     for (Field field : fields) {
-                        Object o = field.get(null);
-                        log.info("Error定义: {}, {}", field.getName(), o);
+                        Object ErrorMessageCodeImpl = field.get(null);
+                        log.info("自定义业务异常码实现类: {}, {}", field.getName(), ErrorMessageCodeImpl);
                     }
                 }
 

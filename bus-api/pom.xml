@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <artifactId>bus-api</artifactId>
-    <version>0.0.10</version>
+    <version>0.0.11</version>
     <name>Bus Common Event</name>
     <description>提供标准的 CommonRemoteEvent 继承 RemoteApplicationEvent</description>
     <properties>
@@ -38,6 +38,16 @@
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-annotations</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
         </dependency>
 
         <dependency>

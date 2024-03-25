@@ -9,3 +9,10 @@ management:
 spring:
   application:
     name: ae3zdfg4
+  security:
+    user:
+      name: user
+      password: passwd
+logging:
+  level:
+    cn.gomro: debug

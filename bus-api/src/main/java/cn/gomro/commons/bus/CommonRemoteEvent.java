@@ -23,7 +23,7 @@ public class CommonRemoteEvent extends RemoteApplicationEvent implements Seriali
     private String type; // save,update,remove
     private String oldJson;
     private String newJson;
-    private String classFullName;
+    private String classFullName; // 区分事件类
 
     /**
      * @param originService 原服务 如果原服务不存在仅能发到 本地事件！ busProperties.getId()

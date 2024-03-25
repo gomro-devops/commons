@@ -1,5 +1,7 @@
 package cn.gomro.commons.restful.api.response.error;
 
+import java.sql.Time;
+
 /**
  *
  * @since 2024/3/14 11:19
@@ -10,6 +12,10 @@ public interface DefaultErrorMessageCode {
     // 500
     ErrorMessageCode InternalError = new ErrorMessageCodeImpl(500, "内部错误，需联系管理员",
             "通常是出现了未定义的Exceptions", "联系管理员", "");
+    // 408
+    ErrorMessageCode RequestTimeOut = new ErrorMessageCodeImpl(408, "用户超时",
+            "服务器等待客户端发送的请求时间过长，超时", "请查阅最新文档", "");
+
     // 404
     ErrorMessageCode NotFoundError = new ErrorMessageCodeImpl(404, "资源不存在",
             "接口不存在或已过期，调用了已过期的接口", "请查阅最新文档", "");

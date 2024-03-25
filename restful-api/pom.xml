@@ -5,12 +5,12 @@
     <parent>
         <groupId>cn.gomro.commons</groupId>
         <artifactId>commons-dependencies</artifactId>
-        <version>0.0.12</version>
+        <version>0.0.13</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
     <artifactId>restful-api</artifactId>
-    <version>0.0.15</version>
+    <version>0.0.16</version>
     <name>RESTful API Generic Interface</name>
     <description>RESTful API 通用接口请求及响应包装类 Request and Response Wrapper</description>
     <properties>
@@ -40,15 +40,32 @@
         </dependency>
 
         <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+        </dependency>
+
+        <dependency>
             <groupId>cn.gomro.commons</groupId>
             <artifactId>utils</artifactId>
-            <version>0.0.10</version>
+            <version>0.0.12</version>
         </dependency>
 
         <dependency>
             <groupId>cn.gomro.commons</groupId>
             <artifactId>thin-log</artifactId>
             <version>0.0.10</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-core</artifactId>
+            <scope>provided</scope>
         </dependency>
 
     </dependencies>

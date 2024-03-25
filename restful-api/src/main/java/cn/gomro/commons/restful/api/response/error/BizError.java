@@ -31,7 +31,7 @@ public class BizError {
         this.reference = error.getReference();
         String[] errors = {};
         if (e != null) {
-            String warn = FriendlyErrorLog.warn(e);
+            String warn = FriendlyErrorLog.error(e);
             String replace = warn.replace("\n", ",");
             errors = StringUtils.commaDelimitedListToStringArray(replace);
         }
